@@ -12,12 +12,10 @@ spring:
     username: guest
     password: guest
 
-
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 
 rabbitmq:
   exchange:
@@ -30,4 +28,4 @@ rabbitmq:
 gemini:
   api:
     url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent
-    key: AIzaSyDjSj4-cLvrHSV7_s6r6Q3ZQUiKZfB4w3M
+    key: ${GEMINI_API_KEY}
